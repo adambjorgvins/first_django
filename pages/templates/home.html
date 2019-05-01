@@ -1,0 +1,22 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+
+<h1>Homepage</h1>
+
+{% endblock content %}
+
+
+
+{% block sidbar %}
+
+    <ul>
+      {% for person in people %}
+        <li>{{ person.name }} er {{ person.age }} ára</li>
+      {% endfor %}
+    </ul>
+
+{% endblock sidbar %}
